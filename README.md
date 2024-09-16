@@ -1,7 +1,6 @@
 ## Overview
 
-This Java program performs Lagrange interpolation on a set of points. It reads input data from a JSON-like structure, processes it, and computes a constant term using the Lagrange interpolation method.
-
+This project implements a simplified version of Shamir's Secret Sharing algorithm to find the constant term c of an unknown polynomial. The polynomial's roots are provided in a JSON format, with each root encoded in a specified base. The code reads these roots, decodes the values, and uses Lagrange interpolation to determine the constant term.
 ## Prerequisites
 
 - Java Development Kit (JDK) 8 or higher
