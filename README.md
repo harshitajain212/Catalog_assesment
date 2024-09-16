@@ -20,4 +20,13 @@ This Java program performs Lagrange interpolation on a set of points. It reads i
  If you have this code in a repository, clone it using:
    ```bash
 cd <project-directory>
+```
+## 2. Install JDK
+Ensure you have JDK installed. You can download it from Oracle’s JDK website or use OpenJDK.
+
+Verify the installation by running:
+
+ ```bash
+java -version
+ ```
 
