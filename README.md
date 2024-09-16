@@ -1,5 +1,3 @@
-# Lagrange Interpolation Java Program
-
 ## Overview
 
 This Java program performs Lagrange interpolation on a set of points. It reads input data from a JSON-like structure, processes it, and computes a constant term using the Lagrange interpolation method.
