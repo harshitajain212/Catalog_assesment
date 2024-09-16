@@ -29,4 +29,16 @@ Verify the installation by running:
  ```bash
 java -version
  ```
+3. Compile the Java Program
+Open a terminal or command prompt and navigate to the directory containing Main.java.
 
+Compile the Java program using the javac command:
+```bash
+javac Main.java
+```
+4. Run the Java Program
+Execute the compiled Java program using the java command:
+```bash
+java Main
+```
+The program will output the constant term computed by Lagrange interpolation based on the provided input data.
