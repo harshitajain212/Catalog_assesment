@@ -1,17 +1,11 @@
 import java.util.*;
-
-public class Main {
-
-    
+public class Main{
     public static double lagrangeInterpolation(List<Point> points) {
         double c = 0;
-
-        int n = points.size();
-        
+        int n=points.size();
         for (int i = 0; i < n; i++) {
             double xi = points.get(i).x;
             double yi = points.get(i).y;
-
             double li = 1; 
             for (int j = 0; j < n; j++) {
                 if (i != j) {
@@ -19,14 +13,11 @@ public class Main {
                     li *= -xj / (xi - xj);
                 }
             }
-
-            c += yi * li;
+            c=c+ yi * li;
         }
-
         return c;
     }
-
-    public static int findConstantTerm(Map<String, Object> inputJson) {
+   public static int findConstant(Map<String, Object> inputJson) {
         try {
             Map<String, Integer> keys = (Map<String, Integer>) inputJson.get("keys");
             if (keys == null) throw new IllegalArgumentException("Missing 'keys' in input JSON");
@@ -71,8 +62,7 @@ public class Main {
             return Integer.MIN_VALUE; 
         }
     }
-
-    public static void main(String[] args) {
+    public static void main(String args[]){
         Map<String, Object> inputJson = new HashMap<>();
 
         Map<String, Integer> keys = new HashMap<>();
@@ -100,7 +90,7 @@ public class Main {
         point6.put("value", "213");
         inputJson.put("6", point6);
 
-        int constantTerm = findConstantTerm(inputJson);
+        int constantTerm = findConstant(inputJson);
         if (constantTerm != Integer.MIN_VALUE) {
 
 
