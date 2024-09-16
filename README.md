@@ -17,3 +17,9 @@ This Java program performs Lagrange interpolation on a set of points. It reads i
    ```bash
    git clone <repository-url>
 # Catalog_assesment
+
+##Navigate Project Directory
+ If you have this code in a repository, clone it using:
+   ```bash
+cd <project-directory>
+
